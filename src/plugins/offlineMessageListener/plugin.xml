@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Plugin configuration for the broadcast plugin.
+-->
+<plugin>
+    <class>com.angelystor.openfire.plugin.OfflineMessageListenerPlugin</class>
+    <name>Offline Message Listener</name>
+    <description>Forwards offline messages to users as a post.</description>
+    <author>Angelystor</author>
+    <version>1.0.0</version>
+    <date>8/7/2013</date>
+    <url></url>
+    <minServerVersion>3.5.0</minServerVersion>
+
+    <adminconsole>
+        <tab id="tab-server">
+            <sidebar id="sidebar-server-settings">
+                <item id="offline-form" name="Offline Message Listener" url="offline-message-listener.jsp"
+                     description="Click to configure offline message listener" />
+            </sidebar>
+        </tab>
+    </adminconsole>
+
+</plugin>
