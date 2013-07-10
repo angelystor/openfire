@@ -706,6 +706,7 @@
         </if>
 
         <!-- Copy bin dir -->
+        <mkdir dir="${target.openfireHome}/bin"/>    	
         <copy todir="${target.openfireHome}">
             <fileset dir="${src.dir}" includes="bin/**/*"/>
         </copy>
@@ -782,7 +783,7 @@
     </target>    
 
     <!-- dist.src =============================================================================== -->
-    <target name="dist.src" depends="init, dist.init, javadoc, -i18n"
+    <target name="dist.src" depends="init, dist.init, -i18n"
             description="Creates a source distribution package">
 
         <mkdir dir="${release.dest.dir}"/>
